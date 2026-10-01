@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harish B | Full Stack Developer</title>
+  <meta name="description" content="Harish B - Software Developer Portfolio. Computer Science student at Kingston Engineering College.">
+  <meta name="theme-color" content="#0B0D10" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F6F7F4" media="(prefers-color-scheme: light)">
+  
+  <meta property="og:title" content="Harish B | Full Stack Developer">
+  <meta property="og:description" content="Harish B - Software Developer Portfolio">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  
+  <!-- Inline Theme Script -->
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('theme');
+        if (theme) {
+          document.documentElement.setAttribute('data-theme', theme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body data-page="home">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="nav">
+    <div class="container nav__container">
+      <a href="index.html" class="nav__logo" aria-label="Harish B Home">HB</a>
+      
+      <button class="nav__hamburger" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <ul class="nav__list" id="nav-list">
+        <li><a href="index.html" class="nav__link" data-nav="home">Home</a></li>
+        <li><a href="experience.html" class="nav__link" data-nav="experience">Experience</a></li>
+        <li><a href="skills.html" class="nav__link" data-nav="skills">Skills</a></li>
+        <li><a href="projects.html" class="nav__link" data-nav="projects">Projects</a></li>
+        <li><a href="contact.html" class="nav__link" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="nav__theme-btn" aria-label="Toggle theme" aria-pressed="false">
+          <!-- Sun/Moon icon using currentColor -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3V4M12 20V21M4.22 4.22L4.93 4.93M19.07 19.07L19.78 19.78M1 12H2M22 12H23M4.22 19.78L4.93 19.07M19.07 4.93L19.78 4.22M12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- A) Hero -->
+    <section class="hero container">
+      <div class="hero__container">
+        <div class="hero__content">
+          <span class="section-head__eyebrow reveal" data-delay="0">Full Stack Developer &middot; CSE '27</span>
+          <h1 class="hero__title reveal" data-delay="100">Hi, I'm <span class="hero__title-accent">Harish B.</span></h1>
+          <div class="hero__subtitle reveal" data-delay="200">I build responsive, full-stack web applications.</div>
+          <p class="hero__intro reveal" data-delay="300">
+            Computer Science student at Kingston Engineering College with a strong foundation in JavaScript, Java, React and Node.js. I enjoy turning ideas into fast, user-friendly products &mdash; from ride-booking platforms to explainable code-analysis tools.
+          </p>
+          <div class="hero__actions reveal" data-delay="400">
+            <a href="projects.html" class="btn btn--primary btn--md">View projects</a>
+            <a href="contact.html" class="btn btn--secondary btn--md">Contact me</a>
+            <a href="assets/Harish_B_Resume.pdf" class="btn btn--ghost btn--md" download>Download resume</a>
+          </div>
+        </div>
+        <div class="hero__portrait-wrapper reveal" data-delay="300">
+          <div class="hero__glow"></div>
+          <div class="hero__portrait-fallback">HB</div>
+          <img src="assets/img/harish.jpg" alt="Portrait of Harish B" class="hero__portrait" width="400" height="500">
+        </div>
+      </div>
+    </section>
+
+    <!-- B) Highlights strip -->
+    <section class="section container">
+      <div class="highlights reveal">
+        <div class="highlight-tile">
+          <div class="highlight-tile__value">8.41 / 10</div>
+          <div class="highlight-tile__caption">CGPA, B.E. CSE</div>
+        </div>
+        <div class="highlight-tile">
+          <div class="highlight-tile__value">Gold</div>
+          <div class="highlight-tile__caption">NPTEL, Programming in Java (91%)</div>
+        </div>
+        <div class="highlight-tile">
+          <div class="highlight-tile__value">1st</div>
+          <div class="highlight-tile__caption">Prize, Tech Talks technical event</div>
+        </div>
+        <div class="highlight-tile">
+          <div class="highlight-tile__value">2nd</div>
+          <div class="highlight-tile__caption">Place, Project Expo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C) Featured work -->
+    <section class="section container">
+      <div class="section-head reveal">
+        <span class="section-head__eyebrow">Selected work</span>
+        <h2 class="section-head__title">Things I've built</h2>
+      </div>
+      
+      <div class="featured-grid">
+        <a href="projects.html" class="card project-card reveal">
+          <h3 class="project-card__title">Multi-Language Code Plagiarism &amp; Logic Contradiction Engine</h3>
+          <p class="project-card__desc">Explainable analysis of Java and Python submissions using a shared AST-based representation.</p>
+          <div class="chip-list">
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">MongoDB</span>
+          </div>
+        </a>
+        
+        <a href="projects.html" class="card project-card reveal" data-delay="100">
+          <h3 class="project-card__title">Ridego &mdash; Ride Booking &amp; Tracking Platform</h3>
+          <p class="project-card__desc">Full ride-hailing flow from signup and booking to live tracking, payment and admin dashboard.</p>
+          <div class="chip-list">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Node.js</span>
+          </div>
+        </a>
+      </div>
+      
+      <div class="reveal" data-delay="200">
+        <a href="projects.html" class="link-text">See all projects &rarr;</a>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="leetcode-heading">
+      <div class="lc-card reveal" data-solved="" data-rating="" data-streak="">
+        <div class="lc-card__header">
+          <svg class="lc-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+            <line x1="10" y1="22" x2="14" y2="2"></line>
+          </svg>
+          <span class="lc-card__label">Problem solving</span>
+        </div>
+        <h2 id="leetcode-heading" class="lc-card__title">I practise on LeetCode</h2>
+        <p class="lc-card__desc">I solve algorithm and data-structure problems regularly to sharpen my problem-solving and interview skills.</p>
+        <span class="lc-card__handle">@leetcode</span>
+        
+        <div class="lc-card__stats">
+          <div class="lc-stat" data-type="solved">
+            <span class="lc-stat__val"></span>
+            <span class="lc-stat__label">Problems solved</span>
+          </div>
+          <div class="lc-stat" data-type="rating">
+            <span class="lc-stat__val"></span>
+            <span class="lc-stat__label">Contest rating</span>
+          </div>
+          <div class="lc-stat" data-type="streak">
+            <span class="lc-stat__val"></span>
+            <span class="lc-stat__label">Day streak</span>
+          </div>
+        </div>
+
+        <div>
+          <a href="https://leetcode.com/u/Q5L8akYLU5/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            View LeetCode profile ↗ <span class="visually-hidden">(opens in new tab)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- D) Most recent experience -->
+    <section class="section container reveal">
+      <a href="experience.html" class="card exp-card">
+        <div class="exp-card__info">
+          <h3 class="exp-card__title">Full Stack Development Intern</h3>
+          <p>Strydo Technologies Pvt. Ltd. &middot; June &ndash; July 2026</p>
+        </div>
+        <span class="link-text">Full experience &rarr;</span>
+      </a>
+    </section>
+
+    <!-- F) Closing CTA band -->
+    <section class="cta-band reveal">
+      <div class="container">
+        <h2>Let's build something together.</h2>
+        <a href="contact.html" class="btn btn--primary btn--md">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <a href="index.html" class="footer__logo">HB</a>
+        <ul class="footer__nav">
+          <li><a href="index.html" class="footer__nav-link">Home</a></li>
+          <li><a href="experience.html" class="footer__nav-link">Experience</a></li>
+          <li><a href="skills.html" class="footer__nav-link">Skills</a></li>
+          <li><a href="projects.html" class="footer__nav-link">Projects</a></li>
+          <li><a href="contact.html" class="footer__nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span class="footer__year"></span> Harish B. All rights reserved.</p>
+        <ul class="footer__social">
+          <li>
+            <a href="https://github.com/harishb934522-ops" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://leetcode.com/u/Q5L8akYLU5/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LeetCode">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.939 5.939 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L11.1 8.214c.489-.539 1.349-.539 1.84 0 .489.54.489 1.414 0 1.954l-5.009 5.54a1.373 1.373 0 0 0-.323 1.295 1.332 1.332 0 0 0 1.08 1.026c.435.086.883-.053 1.192-.387l5.01-5.539c1.554-1.716 1.554-4.514 0-6.231l-5.405-5.787L14.444.646a1.375 1.375 0 0 0-.961-2.352z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:harishb934522@gmail.com" class="footer__social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
